@@ -6,6 +6,7 @@ import MoviePage from "./pages/movieDetailsPage";
 import FavoriteMoviesPage from "./pages/favoriteMoviesPage";
 import MovieReviewPage from "./pages/movieReviewPage";
 import SiteHeader from './components/siteHeader'
+import UpcomingMoviesPage from "./pages/upcomingMoviesPage";
 
 
 const App = () => {
@@ -13,11 +14,12 @@ const App = () => {
         <BrowserRouter>
             <SiteHeader />      {/* New Header  */}
             <Switch>
-          <Route exact path="/movies/favorites" component={FavoriteMoviesPage} />
-          <Route path="/movies/:id" component={MoviePage} />
-          <Route exact path="/" component={HomePage} />
-          <Route path="/reviews/:id" component={MovieReviewPage} />
-          <Redirect from="*" to="/" />
+            <Route exact path="/movies/upcoming" component={UpcomingMoviesPage} />
+            <Route exact path="/movies/favorites" component={FavoriteMoviesPage} />
+            <Route path="/movies/:id" component={MoviePage} />
+            <Route exact path="/" component={HomePage} />
+            <Route path="/reviews/:id" component={MovieReviewPage} />
+            <Redirect from="*" to="/" />
         </Switch>
       </BrowserRouter>
     );
