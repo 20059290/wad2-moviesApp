@@ -27,6 +27,7 @@ const MoviesContextProvider = (props) => {
       newWatchlist = [...watchlist, movie.id];
     }
     setWatchlist(newWatchlist)
+    console.log(watchlist)
   };
 
   const removeFromWatchlist = (movie) => {
