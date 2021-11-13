@@ -19,19 +19,3 @@ const AddToWatchlistIcon = ({ movie }) => {
 };
 
 export default AddToWatchlistIcon;
-
-// const AddToFavoritesIcon = ({ movie }) => {
-//     const context = useContext(MoviesContext);
-  
-//     const handleAddToFavorites = (e) => {
-//       e.preventDefault();
-//       context.addToFavorites(movie);
-//     };
-//     return (
-//       <IconButton aria-label="add to favorites" onClick={handleAddToFavorites}>
-//         <FavoriteIcon color="primary" fontSize="large" />
-//       </IconButton>
-//     );
-//   };
-  
-//   export default AddToFavoritesIcon;
