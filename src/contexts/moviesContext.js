@@ -44,9 +44,11 @@ const MoviesContextProvider = (props) => {
     <MoviesContext.Provider
       value={{
         favorites,
+        watchlist,
         addToFavorites,
         addToWatchlist,
         removeFromFavorites,
+        removeFromWatchlist,
         addReview,
       }}
     >
