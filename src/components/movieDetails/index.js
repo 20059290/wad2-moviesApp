@@ -79,6 +79,7 @@ const MovieDetails = ({ movie }) => {
       <Fab
         color="secondary"
         variant="extended"
+        aria-label="review"
         onClick={() =>setDrawerOpen(true)}
         className={classes.fab}
       >
